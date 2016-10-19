@@ -13,8 +13,8 @@ server.use(express.static(__dirname + "/public"));
 server.use(logger);
 server.use(cors());
 //server.use(authorize);
-server.use(indexRouter);
 
+server.use(indexRouter);
 server.use(forecastRouter);
 
 server.listen(port, function(){
